@@ -1,0 +1,136 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Polyglot LLC | Open Source 
+    // Responsive Meta Tag
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // main stylesheet
+    link(rel='stylesheet', href='css/style.css')
+    // responsive stylesheet
+    link(rel='stylesheet', href='css/responsive.css')
+  body
+    // .preloader
+    .preloader
+    // /.preloader
+    // #header
+    header#header
+      .container
+        .row
+          // .logo
+          .col-lg-3.col-md-3.col-sm-6.col-xs-6.logo
+            a(href='/')
+              img(src='img/resources/logo.png', alt='Logo Image')
+          // /.logo
+          // .mainmenu-container
+          nav.col-lg-9.col-md-9.col-sm-6.col-xs-6.mainmenu-container
+            button.nav-toggler
+              | Navigation 
+              i.fa.fa-bars
+            ul.mainmenu.clearfix
+              li.nav-closer
+                i.fa.fa-close
+              li.current.scrollToLink
+                a(href='#banner') Home
+              li.scrollToLink
+                a(href='#event-speakers') People
+              li.scrollToLink
+                a(href='#blog') Open Source
+          // /.mainmenu-container
+    // /#header
+    // #banner
+    section#banner
+      .banner-container
+        .banner
+          ul
+            li.slider-1.text-center.gradient-overlay
+              img(src='img/background/banner-bg.jpg', data-bgposition='center center', data-bgpositionend='center center', alt='slider image')
+              .caption.sfb.tp-resizeme(data-x='0', data-y='290', data-speed='700', data-start='1500', data-easing='easeOutBack')
+                h1 Open Source Projects
+    section#event-speakers
+      .container
+        .row
+          .col-lg-12
+            .section-title.text-center
+              h1 The People
+              p
+                | We Love Open Source. At Polyglot we have dedicated time to release open source data, apps, ideas, concepts, etc.  
+                br
+                |  While names are awesome. We prefer the old ways from IRC. So we use our handles. 
+        .row
+          .col-lg-6.col-md-8.col-sm-8.col-lg-offset-0.col-md-offset-1.col-sm-offset-1
+            // .single-speakers
+            .single-speakers.row
+              .info.text-right.col-lg-6.col-md-7.col-sm-7
+                h3 MR0B0T
+                span.position Writes Code
+                p We don't have positions. We have skills. 
+              .img-holder.text-center.col-lg-6.col-md-5.col-sm-5
+                .img-container
+                  img(src='img/speakers/1.png', alt='')
+            // /.single-speakers
+            // .single-speakers
+          .col-lg-6.col-md-8.col-sm-10.col-lg-offset-0.col-md-offset-1.col-sm-offset-1
+            .single-speakers.row
+              .info.text-right.col-lg-6.col-md-7.col-sm-7
+                h3 Zero Prime
+                span.position Writes Code
+                p We don't have positions. We have skills. 
+              .img-holder.text-center.col-lg-6.col-md-5.col-sm-5
+                .img-container
+                  img(src='img/speakers/zero.jpg', alt='')
+    // /#event-speakers
+    // #blog
+    section#blog
+      .container
+        .row
+          .col-lg-12
+            .section-title.text-center
+              h1 LATEST Releases
+              p
+                | All releases will be listed here 
+                br
+                |  All frameworks and datasets will be posted here
+        //
+            .row.blog-post-container
+              .col-lg-8.col-md-8.col-sm-12
+                .row
+                  .single-post.thumbnail.col-lg-12.col-md-12.col-sm-12.wow.fadeIn
+                    .img-holder.pull-left
+                      img(src='img/blog/1.jpg', alt='')
+                    .content.pull-left
+                      h3 Post with Image Here
+                      p.meta
+                        a(href='#') Rashed kabir
+                        |  on 24  Feb, 2014
+                      p
+                        | Lorem Ipsum is simply dummy text of the 
+                        br
+                        |  printing and typesetting industry.
+                      a.read-more.hvr-bounce-to-right(href='#') read more
+    section#bottom-bar
+      .container
+        .row
+          .col-lg-12.text-center
+            p
+              | © 2015 
+              a(href='/') Polyglot LLC 
+              |  ALL RIGHTS RESERVED
+    // /#bottom-bar
+    script(src='js/jquery.min.js')
+    script(src='js/jquery.themepunch.tools.min.js')
+    script(src='js/jquery.themepunch.revolution.min.js')
+    script(src='js/countdown.min.js')
+    script(src='js/jquery.easing.min.js')
+    script(src='js/jquery.fancybox.pack.js')
+    script(src='js/jquery.mixitup.min.js')
+    script(src='js/jquery.bxslider.min.js')
+    script(src='js/owl.carousel.min.js')
+    script(src='js/jquery.appear.js')
+    script(src='js/jquery.countTo.js')
+    script(src='js/circle-progress.js')
+    script(src='js/wow.js')
+    script(src='js/validate.js')
+    script(src='js/custom.js')
+
+
