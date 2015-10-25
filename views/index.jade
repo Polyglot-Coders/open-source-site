@@ -44,9 +44,18 @@ html(lang='en')
         .banner
           ul
             li.slider-1.text-center.gradient-overlay
-              img(src='img/background/banner-bg.jpg', data-bgposition='center center', data-bgpositionend='center center', alt='slider image')
-              .caption.sfb.tp-resizeme(data-x='0', data-y='290', data-speed='700', data-start='1500', data-easing='easeOutBack')
-                h1 Open Source Projects
+                img(src='img/background/banner-bg.jpg', data-bgposition='center center', data-bgpositionend='center center', alt='slider image') 
+                
+                .caption.sfb.tp-resizeme.text-center(data-x='0', data-y='220', data-speed='700', data-start='1000', data-easing='easeOutBack')
+                    .date
+                        | V-0.5 Postgres Data
+                .caption.sfb.tp-resizeme(data-x='0', data-y='290', data-speed='700', data-start='1500', data-easing='easeOutBack')
+                    h1 Oxford Dictionary
+                    h1 Next Update By Nov 1
+                ul.caption.sfb.tp-resizeme.banner-buttons(data-x='0', data-y='450', data-speed='700', data-start='2500', data-easing='easeOutBack')
+                    li.scrollToLink
+                        a.bordered.hvr-bounce-to-right(href='https://www.dropbox.com/s/p6pbsy46fo0z834/dictionary.sql?dl=0') Download
+                
     section#event-speakers
       .container
         .row
@@ -91,23 +100,22 @@ html(lang='en')
                 | All releases will be listed here 
                 br
                 |  All frameworks and datasets will be posted here
-        //
-            .row.blog-post-container
-              .col-lg-8.col-md-8.col-sm-12
-                .row
-                  .single-post.thumbnail.col-lg-12.col-md-12.col-sm-12.wow.fadeIn
-                    .img-holder.pull-left
-                      img(src='img/blog/1.jpg', alt='')
-                    .content.pull-left
-                      h3 Post with Image Here
-                      p.meta
-                        a(href='#') Rashed kabir
-                        |  on 24  Feb, 2014
-                      p
-                        | Lorem Ipsum is simply dummy text of the 
-                        br
-                        |  printing and typesetting industry.
-                      a.read-more.hvr-bounce-to-right(href='#') read more
+        .row.blog-post-container
+          .col-lg-8.col-md-8.col-sm-12
+            .row
+              .single-post.thumbnail.col-lg-12.col-md-12.col-sm-12.wow.fadeIn
+                .img-holder.pull-left
+                  img(src='img/blog/1.jpeg', alt='')
+                .content.pull-left
+                  h3 Dictionary Postgres.sql
+                  p.meta
+                    a(href='#')
+                    |  on Oct 25  Feb, 2015
+                  p
+                    | V - 0.5 of oxford dictionary in a postgres.sql file 
+                    br
+                    |  We believe we missed a few words.. Will updating within the next 2 weeks
+                  a.read-more.hvr-bounce-to-right(href='https://www.dropbox.com/s/p6pbsy46fo0z834/dictionary.sql?dl=0') Download
     section#bottom-bar
       .container
         .row
